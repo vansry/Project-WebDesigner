@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Admin</title>
+        <link rel="icon" href="https://image.flaticon.com/icons/svg/701/701993.svg">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- IonIcons -->
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+
+        <script src="js/Aindex.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <link href="https://fonts.googleapis.com/css?family=Dangrek&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/paginator-style.css">
+    </head>
+    <style>
+        .content-header {
+            text-align: center;
+            background-color: #3E4551;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .bgc {
+            background-color: #3E4551;
+        }
+
+        .img {
+            width: 600px;
+            height: 00px;
+        }
+
+        .searchInput {
+            font-size: 20px !important;
+        }
+    </style>
+
+
+    <body class="hold-transition sidebar-mini">
+        <div class="wrapper">
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.navbar -->
+
+            <!-- Main Sidebar Container -->
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="img/Edited2.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">Van Sry </a>
+                        </div>  
+                    </div>
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                            data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                            <li class="nav-item">
+                                <a href="indexMyLTE.html" class="nav-link">
+                                    <i class="nav-icon fas fa-home"></i>
+                                    <p>Home</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="adminLogin.html" class="nav-link">
+                                    <i class="nav-icon fas fa-sign-out-alt"></i>
+                                    <p> Log Out</p>
+                                </a>
+                            </li>
+                            <br>
+                            <li class="nav-item">
+                                <a href="../home.html" class="nav-link">
+                                    <!-- <div>
+                                        <a href="#" class="black-text btnText">Go To <i class="fas fa-home"></i></a>
+                                    </div> -->
+                                    <i class="fas fa-home"></i>
+                                    <p> Go To Website Home Page</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <div class="content-header text-center">
+
+                    <h1 class="m-0 text-white font-weight-bold">View Details</h1>
+
+
+                </div>
+                <!-- /.content-header -->
+
+                <!-- Main content -->
+                <div class="content">
+                    <div class="container">
+                        <div class="jumbotronContainer">
+
+                        </div>
+                        <script type="text/javascript"
+                            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+                        </script>
+                        <script src="js/AMSdetail.js"></script>
+
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalArticle" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title​​" id="modalTitle"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="text-center border border-light p-5">
+
+                                        <p class="h4 mb-4 khmer"><i class="fas fa-feather-alt"></i> Add New Article</p>
+
+                                        <input type="hidden" id="id">
+
+                                        <input type="text" id="title" class="form-control mb-4" placeholder="TITLE">
+
+                                        <input type="text" id="description" class="form-control mb-4"
+                                            placeholder="description">
+
+                                        <input type="text" id="image" class="form-control mb-4" placeholder="LINK">
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn khmer btn-danger"
+                                        data-dismiss="modal">CANCEL</button>
+                                    <button type="button" class="btn khmer btn-primary khmer​" ​
+                                        id="btnSave">SAVE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <!-- Main Footer -->
+            <footer class="main-footer">
+                <span class="copyright">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> BY: TEL VANSRY<a href="../home.html"
+                        target="_blank">This Link</a>
+                </span>
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- REQUIRED SCRIPTS -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE -->
+        <script src="js/adminlte.js"></script>
+
+        <script src="js/paginator.min.js"></script>
+
+
+    </body>
+
+</html>

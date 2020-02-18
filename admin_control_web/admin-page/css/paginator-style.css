@@ -1,0 +1,46 @@
+.paginator .pagination .page-item {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 1px;
+    border: 1px solid #e4eaec;
+    border-radius: 5px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .paginator .pagination .page-item.selected {
+    background-color: #5ac195;
+  }
+  .paginator .pagination .page-item.selected span {
+    color: white;
+    font-weight: bold;
+  }
+  .paginator .pagination .page-item:hover {
+    background-color: #3daf7e;
+    color: #fff;
+  }
+  .paginator .pagination .page-item .page-link {
+    color: inherit;
+    padding: 3px 9px;
+    border: none;
+    display: block;
+  }
+  .paginator .pagination .page-item .page-link:hover {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+  }
+  .paginator .pagination .page-item .page-link:focus {
+    background-color: unset;
+  }
+  .paginator .pagination .page-item:first-child .page-link.disabled,
+  .paginator .pagination .page-item:last-child .page-link.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  .paginator .pagination .page-item:first-child .page-link:hover,
+  .paginator .pagination .page-item:last-child .page-link:hover {
+    font-weight: normal;
+  }
